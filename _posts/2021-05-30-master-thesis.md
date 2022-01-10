@@ -2,7 +2,7 @@
 title: "The Impact of Institutional Arrangements on Student Achievement: Evidence from Brazil"
 author: "Bruno Gasparotto Ponne - bruno.ponne@gmail.com"
 layout: project
-abstract: This project is a continuation of the exploratory analysis of the educational reforms in Ceará. It was actually my Master thesis presented at the Hertie School in 2021 and tutored by Professor Christian Traxler. Two causal inference methodologies - fixed-effects and synthetic control method - were employed toI examined the effect of the educational reforms implemented in Ceará, Brazil.  Bellow I present some highlights of it as well as some of the results. For the complete analysis, please visit my GitHub repo (at the bottom of this page). All the analysis was made in R.
+abstract: This project is a continuation of the exploratory analysis of the educational reforms in Ceará. It was actually my Master thesis presented at the Hertie School in 2021 and tutored by Professor Christian Traxler. Two causal inference methodologies - fixed-effects and synthetic control method - were employed to examine the effect of the educational reforms implemented in Ceará, Brazil.  Bellow I present some highlights of it as well as some of the results. For the complete analysis, please visit my GitHub repo (at the bottom of this page). All the analysis was made in R.
 ---
 
 
