@@ -1,0 +1,271 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  grid-template-rows: 100px 600px 100px 400px 400px 400px 400px 500px;
+  grid-gap: 0;
+  background-color: white;
+  color: #444;
+}
+
+
+body{
+  margin:0;
+  background-color: white;
+  font-family: Helvetica;
+}
+
+.grid div:nth-child(1){
+  grid-column: 1 / -1;
+  margin:0;
+}
+
+.grid div:nth-child(2){
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.grid div:nth-child(3){
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.grid div:nth-child(4){
+  grid-column: 1 / -1;
+  grid-row: 3;
+}
+
+.grid div:nth-child(5){
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.grid div:nth-child(6){
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.grid div:nth-child(7){
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.grid div:nth-child(8){
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.grid div:nth-child(9){
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.grid div:nth-child(10){
+  grid-column: 2;
+  grid-row: 6;
+}
+
+.grid div:nth-child(11){
+  grid-column: 1;
+  grid-row: 7;
+}
+
+.grid div:nth-child(12){
+  grid-column: 2;
+  grid-row: 7;
+}
+
+.grid div:nth-child(13){
+  grid-column: 1 / -1;
+  grid-row: 8;
+}
+
+
+.header {
+  background-color: #213147;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  padding: 1%;
+}
+
+#apresentacao{
+  background-color: white;
+  color: #213147;
+  border-radius: 0px;
+  padding: 10px;
+  margin-left: 10%;
+}
+
+.foto{
+  background-color: white;
+  border-radius: 0px;
+  padding: 10px;
+  
+}
+
+.foto img{
+  width: 50%;
+  display: block; 
+  margin: auto;
+  padding:20px;
+  border-radius: 50%;
+}
+
+#projetosTit{
+  background-color: #213147;
+  color: #fff;
+  margin:0;
+}
+
+.projeto1{
+  background-color: #213147;
+  color: #fff;
+  margin: 0;
+}
+
+.imProjeto1{
+  background-color: #213147;
+  color: #fff;
+  margin: 0;
+}
+
+#current{
+  background-color: white;
+  color: #213147;
+  border-radius: 0px;
+  margin-left: 6%;
+}
+
+
+#apresentacao h1{
+font-size: 40px;
+border-left: 40px #213147 solid;
+color: #213147;
+padding-left: 10px;
+}
+
+#apresentacao p{
+  color: #213147;
+  line-height: 25px;
+}
+
+#menu{
+  margin-left: 2%;
+  list-style: none;
+}
+
+.header li {
+  margin:10px;
+  padding:10px;
+  float: left;
+  border: 2px white solid;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #46BCF8;
+  text-decoration: none;
+}
+
+#contatos{
+  margin-left: 20%;
+  margin-right: 10%;
+  list-style: none;
+}
+
+.contatos li {
+  margin:10px;
+  padding:10px;
+  float: left;
+  border: 1px #05192D solid;
+}
+
+.contatos a {
+  color: #05192D;
+  text-decoration: none;
+}
+
+.contatos a:hover {
+  color: #46BCF8;
+  text-decoration: none;
+}
+
+#projetosTit h1{
+font-size: 40px;
+border-left: 40px white solid;
+color: white;
+padding-left: 10px;
+padding-bottom: 10px;
+margin-top: 4%;
+margin-left: 6%;
+}
+
+.projeto1 h3{
+  color: #46BCF8;
+  margin-left: 10%;
+  margin-top: 10%;
+
+}
+
+.projeto1 p{
+  color: white;
+  margin-left: 10%;
+  line-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#capa01{
+  width:50%;
+  border-radius: 0;
+  opacity: 90%;
+  padding: 5%;
+  margin-top:10%;
+}
+
+#capa02{
+  width:50%;
+  border-radius: 0;
+  opacity: 90%;
+  padding:10%;
+  margin-top: 20px;
+}
+
+#current h1{
+  font-size: 40px;
+  border-left: 40px #213147 solid;
+  color: #213147;
+  padding-left: 10px;
+  }
+
+.sergipe1{
+  display: block; 
+  margin: auto;
+  clear: right;
+  width: 35%;
+}
+
+.sergipe2{
+  display: block; 
+  margin: auto;
+  clear: right;
+  width: 50%;
+}
+
+.sergipe3{
+  display: block; 
+  margin: auto;
+  clear: right;
+  width: 60%;
+}

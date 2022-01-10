@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/project_style.css">
+  </head>
+  
+  <body>
+     <header>
+     <div id="menu">
+      <ul id="ulmenu">
+        <li><a href="/">Go back to portfolio</a></li>
+      </ul>
+     </div>
+    </header>
+    <div id = "titAbs">
+      <div id = "titComp">
+      <h1>{{ page.title }}</h1>
+      </div>
+      <div id = abstract>{{ page.abstract }}</div>
+    </div>
+    
+    <div id = "whiteBox">
+    <section>
+      {{ content }}
+    </section>
+    </div>
+    
+   <footer>
+     <a href="mailto:bruno.ponne@gmail.com?subject=PortfolioMessage"><img id = "email" src="/images/email.png" alt="email logo" ></a>
+     <a href="https://github.com/bruno-ponne"><img id = "github" src="/images/github.png" alt="github logo" ></a>
+     <a href="https://www.linkedin.com/in/bruno-gasparotto-ponne-b6041810"><img id = "linkedin" src="/images/linkedin.png" alt="linkedin logo" ></a>
+   </footer>
+  </body>
+</html>

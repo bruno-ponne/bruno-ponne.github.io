@@ -4,67 +4,97 @@
   <head>
     <meta charset="utf-8">
     <title>Bruno Ponne Porfolio</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style_grid.css">
   </head>
-    
+  
   <body>
-    <header>
-     <div id="menu">
-      <ul id="ulmenu">
-        <li><a href="#currentTitle">Current Work</a></li>
-        <li><a href="#projectTitle">Projects</a></li>
-        <li><a href="#welcomeTitle">Welcome Page</a></li>
-      </ul>
-     </div>
-    </header>
-    
-    <div class = whiteCont>
-      <h1 id = "welcomeTitle"> Welcome,</h1>
-      <p>      <img id = "brunoPic" src="bruno.png" alt="bruno's picture">I'm Bruno, a legislative advisor working at the Federal Senate of Brazil. I like to explore places and data. In new places, I love to taste new dishes and drinks, talking to native people in other languages and discovering new realities different from mine. From exploring data, I get a good balance between my emotions and my reason and that helps me to better interpret the world around me. My belief is that we can shape the world as long as we understand it. Data analysis helps me with that. Apart from analysing data, I like gaming and writing some intentions of poetry. In this page I present some of my projects and personal interests. I hope you like.
-     </p>
+    <div class = "grid">
+        <div class="header">
+          <ul id="menu">
+            <li><a href="#apresentacao">Welcome Page</a></li>
+            <li><a href="#projetosTit">Projects</a></li>
+            <li><a href="#current">Current Work</a></li>
+          </ul>
+        </div>
+        <div id = "apresentacao">
+          <h1>Welcome,</h1>
+          <p>I'm Bruno, a legislative advisor working at the Federal Senate of Brazil. I reasearch a variety of topics to inform legislative proposals. My main interest is evidence-based public policy, especially in the field of education. During my master I worked at the Hertie School Data Science Lab, in Berlin. As a teaching assistant I offered consultations on R, data visualization and causal inference to other students at Hertie. In my free time, apart from exploring data, I like exploring new places and cultures. Reading, gamming and jogging are also my hobbies. In this page I present some of my projects and experiences. I hope you like.</p>        </div>
+        <div class="foto">
+          <img id = "brunoPic" src="/assets/IMG_3076.jpeg" alt="bruno's picture">
+          <div class="contatos">
+            <ul id ="contatos">
+              <li><a href="mailto:bruno.ponne@gmail.com?subject=PortfolioMessage">Email</a></li>
+              <li><a href="https://github.com/bruno-ponne">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/bruno-gasparotto-ponne-b6041810">Linkedin</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id = "projetosTit">
+          <div class = projetcTitM>
+            <h1>Projects</h1>
+          </div>
+        </div>
 
-     <h3>Education</h3>
-      <ul>
-        <li> Master of Public Policy - Hertie School, Berlin</li>
-        <li> History - University of Brasília </li>
-      </ul>
-     <h3>Work</h3>
-      <ul>
-        <li> Senado Federal - Legislative Advisor </li>
-        <li> Hertie School Data Science Lab - R Consultant </li>
-      </ul>
-      <h3>Programming in</h3>
-      <ul>
-        <li> R </li>
-        <li> Python </li>
-      </ul>
-    </div>
-    <section>
-    <h1 id="projectTitle"> Projects </h1>
-      <div class="projectBox"><p>There will be a project here : )</p></div>
-      <div class="projectBox"><p>There will be a project here : )</p></div>
-      <div class="projectBox"><p>There will be a project here : )</p></div>
-    <h1 id="currentTitle"> Current Work </h1>
-      <p class = "whitePar"> Currently I have been investigating data on schooling quality in the state of Sergipe, Brazil.</p>
-      <h3 class = whiteH2>Challenge</h3>
-              <p class = whitePar>To identify the main weaknesses of education in Sergipe and propose recommendations</p>
+        <div class="projeto1">
+          <h3>Education Quality in Ceará - Exploratory Analysis</h3>
+            <p>  In 2007, a series of reforms were implemented in the education system in
+              Ceará, Brazil. This research aims to explore data on the education quality index
+              to find out if it suggests these reforms had an impact on student achievement.
+              In order to do so, panel data is analysed through spatial plots, time series and
+              scatter plots.</p>
+        </div>
+        <div class="imProjeto1">
+          <img id = "capa01" src="capa01.png" alt="capa01">
+        </div>
+
+        <div class="projeto1">
+          <h3>Education Quality in Ceará - Confirmatory Analysis</h3>
+            <p> This project is a continuation of the exploratory analysis of the educational reforms in Ceará. It was actually my Master thesis presented at the Hertie School in 2021 and tutored by Professor Christian Traxler. Two causal inference methodologies - fixed-effects and synthetic control method - were employed toI examined the effect of the educational reforms implemented in Ceará, Brazil.  Bellow I present some highlights of it as well as some of the results. For the complete analysis, please visit my GitHub repo (at the bottom of this page). All the analysis was made in R.</p>
+        </div>
+        <div class="imProjeto1">
+          <img id = "capa01" src="capa02.png" alt="capa02">
+        </div>
+
+        <div class="projeto1">
+          <h3>Predicting student loan default in Brazil</h3>
+            <p>This project was presented in the Machine Learning Course at the Hertie School in 2021, tutored by Professor Slava Jankin and Hannah Bechara. It was developed in partnership with two other students*. Our goal was to employ machine learning algorithms to predict loan default probabilities in the context of a Brazilian student loan program called FIES. For the initial runs, we employed 5 methods: logistic regression, decision tree, random forest, linear support vector classification, and artificial neural networks - ANN. Random forest and ANN achieved the highest area under the curve (AUC) scores. Our final objective was to create an ensemble model with the best performing models. Moreover we studied the predictive power of the main features. We also  discussed the ethical, social, and economic implications of the results obtained.</p>
+        </div>
+        <div class="imProjeto1">
+          <img id = "capa01" src="capa03.png" alt="capa03">
+        </div>
+
+        <div class="projeto1">
+          <h3>Alethea: finding the thruth in Twitter</h3>
+            <p>Alethea's objective is to create a web application to aggregate data on fake news from fact checking Twitter accounts. The goal of the app is to automate the collection of information in one place helping people to be informed in a fast and reliable way.</p>
+        </div>
+        <div class="imProjeto1">
+          <img id = "capa01" src="capa04.png" alt="capa03">
+        </div>
+
+        <div id="current">
+          <h1>Current Work</h1>
+          <p> Currently I have been investigating data on schooling quality in the state of Sergipe, Brazil.</p>
+            <h3>Challenge</h3>
+              <p>To identify the main weaknesses of education in Sergipe and propose recommendations.</p>
             <h3>Approach</h3>
-              <p class = whitePar>Analysing data provided by the Brazilian government and researching the related literature</p>
+              <p>Analysing data provided by the Brazilian Ministry of Education and researching the related literature.</p>
             <h3>Outlook</h3>
-              <p class = whitePar> So far, the main findings are:</p>
+              <p> So far, the main findings are:</p>
                 <ul class = whitePar>
-                  <li>severe lack of training for teachers</li>
-                  <li>poor infrastructure (libraries and labs)</li>
-                  <li>insufficient textbooks</li>
+                  <li>the index of education quality in Sergipe is low compared to other states;</li>
+                  <li>severe lack of training for teachers;</li>
+                  <li>poor infrastructure (libraries and labs);</li>
+                  <li>insufficient textbooks;</li>
                 </ul>
-    </section>
-    
-   <footer>
-     <a href="mailto:bruno.ponne@gmail.com?subject=PortfolioMessage"><img id = "email" src="email.png" alt="email logo" ></a>
-     <a href="https://github.com/bruno-ponne"><img id = "github" src="github.png" alt="github logo" ></a>
-     <a href="https://www.linkedin.com/in/bruno-gasparotto-ponne-b6041810"><img id = "linkedin" src="linkedin.png" alt="linkedin logo" ></a>
-   </footer>
-   
-
-    
+              <p> The plot bellow compares Sergipe and Brazil's distribution of the index of education quality. It is clearly visible that Sergipe has lower performance compared to the rest of the country.</p>
+              <img class = "sergipe1" src="dist_br.png" alt="map" >
+              <p> To further explore the outcomes of Sergipe relative to the other states, I employed the following bar plot: </p>
+              <img class = "sergipe2" src="ranking_br.png" alt="map" >
+              <p> Finally, the spatial plot bellow provides an overview of the geographical areas where public policies to improve education are more urgent: </p>
+              <img class = "sergipe3" src="map_se.png" alt="map" >
+        
+        
+        
+        </div>
+    </div>
   </body>

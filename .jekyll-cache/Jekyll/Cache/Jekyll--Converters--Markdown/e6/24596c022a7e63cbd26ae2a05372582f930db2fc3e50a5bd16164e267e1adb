@@ -1,0 +1,33 @@
+I"1<h3 id="introduction">Introduction</h3>
+
+<p>This project was developed during the last American elections. We* chose three Twitter accounts whose objective was to check the reliability of news being spread during the campaign. The goal of the app was to automate the collection of information in one place helping people to have access to reliable information. Apart from that, we also analyzed the contents of the tweets to get some insights.</p>
+
+<h3 id="twitter-accounts">Twitter accounts</h3>
+
+<p>We chose the following Twitter accounts belonging to fact check websites: Factcheckdotorg, Politifact and Snopes.</p>
+
+<h3 id="the-user-interface">The user interface</h3>
+
+<p>In order to gather and process the tweets we programmed in Python and used the Twitter API. For the user interface we used HTML, CSS and the Flask library. It renders an html file with the information incorporated with Jinja2 commands.</p>
+
+<h3 id="visualizations">Visualizations</h3>
+
+<p>The plot bellow was drawn by an algorithm that collects 9,000 tweets published by the three accounts aforementioned. The tweets are separated in groups that mention or Trump or Biden. Afterwards, fake news related words are counted within these two groups. Fake news related words are: “false”,”fake”,”misleading”, “wrong”, “fraud”, “innacurate”,”incorrect”, “lie”,”fabricated”,”fictitious”, “deceit”, “erroneous”,”distorted”,”unfounded”,”mistaken”,”untrue”:</p>
+
+<p><img src="/assets/compare.png" alt="" />
+The plots bellow show the sentiment analysis of 2000 tweets of each of the accounts:</p>
+
+<p><img src="/assets/384_.png" alt="" />
+<img src="/assets/493_.png" alt="" />
+<img src="/assets/961_.png" alt="" /></p>
+
+<p>Note that all these visualizations were plotted with the tweets pubblished during the electoral campaign in 2020.</p>
+
+<h3 id="more">More</h3>
+
+<p>Please, visit https://github.com/bruno-ponne/Alethea to see the code and more details about this project.</p>
+
+<p><br /></p>
+
+<p>*Thank you Diego, Natália and Adelaida for the nice group work.</p>
+:ET
