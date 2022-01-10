@@ -6,11 +6,9 @@ html {
 .grid {
   display: grid;
   grid-template-columns: 2fr 1.5fr;
-  grid-template-rows: 100px 600px 200px 500px 500px 500px 500px 2200px;
-  grid-gap: 0;
-  border: none;
-  background-color: transparent;
-  color: #444;
+  grid-template-rows: 100px 600px 200px 500px 500px 520px 500px 2200px;
+  grid-gap: 0em;
+  background-color: white;
 }
 
 
@@ -102,9 +100,6 @@ body{
   padding: 1%;
 }
 
-.footer {
-  background-color: #213147;
-}
 
 #apresentacao{
   background-color: white;
@@ -114,7 +109,8 @@ body{
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-left: 10%;
+
+  margin-left: 20%;
 }
 
 .foto{
@@ -135,21 +131,21 @@ body{
 }
 
 #projetosTit{
-  background-color: #213147;
-  color: #fff;
+  background-color: #F7F3EB;
+  color: #213147;
   margin:0;
   padding-top: 100px;
 }
 
 .projeto1{
-  background-color: #213147;
-  color: #fff;
+  background-color: #F7F3EB;
+  color: #213147;
   margin: 0;
 }
 
 .imProjeto1{
-  background-color: #213147;
-  color: #fff;
+  background-color: #F7F3EB;
+  color: #213147;
   margin: 0;
 }
 
@@ -157,7 +153,7 @@ body{
   background-color: white;
   color: #213147;
   border-radius: 0px;
-  margin-left: 6%;
+  margin-left: 12%;
   padding-top: 100px;
 }
 
@@ -167,7 +163,6 @@ font-size: 40px;
 border-left: 40px #213147 solid;
 color: #213147;
 padding-left: 10px;
-padding-bottom:0;
 }
 
 #apresentacao p{
@@ -176,7 +171,7 @@ padding-bottom:0;
 }
 
 #menu{
-  margin-left: 2%;
+  margin-left: 8%;
   list-style: none;
 }
 
@@ -222,24 +217,24 @@ padding-bottom:0;
 
 #projetosTit h1{
 font-size: 40px;
-border-left: 40px white solid;
-color: white;
+border-left: 40px #213147 solid;
+color: #213147;
 padding-left: 10px;
 padding-bottom: 10px;
 margin-top: 4%;
-margin-left: 6%;
+margin-left: 12%;
 }
 
 .projeto1 h3{
   color: #46BCF8;
-  margin-left: 10%;
+  margin-left: 21%;
   margin-top: 10%;
 
 }
 
 .projeto1 p{
-  color: white;
-  margin-left: 10%;
+  color: #213147;
+  margin-left: 21%;
   line-height: 25px;
   display: flex;
   justify-content: center;
@@ -249,16 +244,14 @@ margin-left: 6%;
 
 #capa01{
   width:50%;
-  border-radius: 0;
-  opacity: 90%;
-  padding: 5%;
-  margin-top:10%;
+  display: block;
+  margin-top: 15%;
+  margin-left: 5%;
+  background-color: #F7F3EB;
 }
 
 #capa02{
-  width:50%;
-  border-radius: 0;
-  opacity: 90%;
+  width:80%;
   padding:10%;
   margin-top: 20px;
 }
@@ -293,8 +286,8 @@ margin-left: 6%;
 
 .projeto1 a{
   font-weight: bold;
-  margin-left: 10%;
-  color: white;
+  margin-left: 21%;
+  color: #213147;
   text-decoration: none;
 }
 
@@ -308,8 +301,7 @@ margin-left: 6%;
 footer{
   background-color: #213147;
   height: 60px;
-  padding:20px;
   width:100%;
-  position: absolute;
   bottom: 0;
+  position: absolute;
 }
