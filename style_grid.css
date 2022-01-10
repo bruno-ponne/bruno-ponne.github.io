@@ -6,10 +6,10 @@ html {
 .grid {
   display: grid;
   grid-template-columns: 2fr 1.5fr;
-  grid-template-rows: 100px 600px 200px 400px 400px 400px 400px 1000px;
+  grid-template-rows: 100px 600px 200px 500px 500px 500px 500px 2200px;
   grid-gap: 0;
   border: none;
-  background-color: #213147;
+  background-color: transparent;
   color: #444;
 }
 
@@ -114,8 +114,7 @@ body{
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-
-  margin-left: 0;
+  margin-left: 10%;
 }
 
 .foto{
@@ -306,3 +305,11 @@ margin-left: 6%;
   text-decoration: none;
 }
 
+footer{
+  background-color: #213147;
+  height: 60px;
+  padding:20px;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+}
