@@ -22,19 +22,19 @@ body{
 }
 
 #menu{
-    margin-left: 5%;
+    margin-left: 6%;
     margin-top:0;
     margin-bottom: 3%;
 }
 
 #menu li{
     float: left;
-    padding:1%;
+    padding:0.7%;
     border: 2px white solid;
     text-decoration: none;
     list-style: none;
     margin-left: 2%;
-    width: 10%;
+    width: 11%;
     text-align:center;
 
 }
@@ -75,7 +75,8 @@ body{
     clear: right;
     border-radius: 50%;
     margin-right: 15%;
-    margin-top:0;
+    margin-left: 5%;
+    margin-top: 0;
     margin-bottom: 5%;
 
 }
@@ -88,12 +89,12 @@ body{
 
 #contatos li{
     float: right;
-    padding:1%;
+    padding:0.7%;
     border: 2px #213147 solid;
     text-decoration: none;
     list-style: none;
     margin-left: 1%;
-    width: 7%;
+    width: 8%;
     text-align:center;
 
 }
@@ -141,6 +142,7 @@ body{
     float: right;
     clear: right;
     margin-right: 15%;
+    margin-left: 2%;
 }
 
 #projects a{
