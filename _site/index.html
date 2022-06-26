@@ -1,94 +1,146 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Bruno Ponne Porfolio</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-621D1NYHDX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-621D1NYHDX');
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Bruno Ponne</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
 
-  <body>
+        </div>
+        <div class="welcome">
+            <div class="welcome-container">
+                <div class="welcome-container-pic">
+                    <img src="assets/bruno_pic.jpg" alt="bruno's picture">
+                    <div class="name">
+                        <p>Bruno Gasparotto Ponne</p>
+                    </div>
+                    <div id ="contatos">
+                        <a href="mailto:bruno.ponne@gmail.com?subject=PortfolioMessage" target="_blank" class="button">Email</a>
+                        <a href="https://github.com/bruno-ponne" target="_blank" class="button">GitHub</a>
+                        <a href="https://www.linkedin.com/in/bruno-gasparotto-ponne-b6041810" target="_blank" class="button">Linkedin</a>
+                    </div>
+                </div>
+                <div class="welcome-text">
+                    <p><p class = "hello-highlight"> Hello! I'm Bruno, </p> a legislative advisor working at the Federal Senate of Brazil. My work involves the research of a variety of topics to inform legislative proposals. My main interest is evidence-based public policy, especially in the field of education. I program in R and I am learning Python, CSS and JavaScript. During my master, I worked at the Hertie School Data Science Lab, in Berlin. As a teaching assistant I offered consultations on R, data visualization and causal inference. In my free time, apart from exploring data, I like exploring new places and cultures. Reading, gaming and jogging are also my hobbies. In this page I present some of my projects and experiences. See more below.</p>
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="projects-case">
+                <div class="projects-title">
+                    <h1>Research and Data Exploration</h1>
+                </div>
+                <div class="project">
+                    <div class="project-text">
+                        <a class = "subtitle" href="2020/06/30/education.html" target="_blank">Education Quality in Ceará - Exploratory Analysis </a>
+                        <p> In 2007, a series of reforms were implemented in the education system in
+                            Ceará, Brazil. This research aims to explore data on the education quality index
+                            to find out if it suggests these reforms had an impact on student achievement.
+                            In order to do so, panel data is analysed through spatial plots, time series and
+                            scatter plots.<br><a class = "view-more" href="2020/06/30/education.html" target="_blank">View more</a></p>
+                    </div>
+                    <div class="project-image">
+                        <img class="cover" src="assets/capa01.png" alt="capa01">
+                    </div>
+                </div>
+                <div class="project-reverse">
+                    <div class="project-image-reverse">
+                        <img class="cover" src="assets/capa02.png" alt="capa02">
+                    </div>
+                    <div class="project-text-reverse">
+                        <a class = "subtitle" href="2021/05/30/master-thesis.html" target="_blank">Education Quality in Ceará - Confirmatory Analysis</a>
+                        <p>This project is a continuation of the exploratory analysis of the educational reforms in Ceará. It was
+                            actually my Master thesis presented at the Hertie School in 2021 and tutored by Professor Christian
+                            Traxler. Two causal inference methodologies - fixed-effects and synthetic control method - were employed
+                            to examine the effect of the educational reforms implemented in Ceará, Brazil.</p>
+                        <a class = "view-more" href="2021/05/30/master-thesis.html" target="_blank">View more</a>
+                    </div>
 
-    <div class = "header">
-      <ul id="menu">
-        <li><a href="#welcome">Welcome Page</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#current">Current Work</a></li>
-      </ul>
-
+                </div>
+                <div class="project">
+                    <div class="project-text">
+                        <a class = "subtitle" href="2021/04/15/ML.html" target="_blank"> Predicting student loan default in Brazil </a>
+                        <p>This project was presented in the Machine Learning Course at the Hertie School in 2021, tutored by
+                            Professor Slava Jankin and Hannah Bechara. Our goal was to employ machine learning algorithms to predict
+                            loan default probabilities in the context of a Brazilian student loan program called FIES. For the
+                            initial runs, we employed 5 methods: logistic regression, decision tree, random forest, linear support
+                            vector classification, and artificial neural networks - ANN. Random forest and ANN achieved the highest
+                            area under the curve (AUC) scores. Our final objective was to create an ensemble model with the best
+                            performing models. Moreover we studied the predictive power of the main features. We also discussed the
+                            ethical, social, and economic implications of the results obtained. <br>
+                            <a class = "view-more" href="2021/04/15/ML.html" target="_blank">View more</a></p>
+                    </div>
+                    <div class="project-image">
+                        <img class="cover" src="assets/capa03.png" alt="capa03">
+                    </div>
+                </div>
+                <div class="project-reverse">
+                    <div class="project-image-reverse">
+                        <img class="cover" src="assets/capa04.png" alt="capa04">
+                    </div>
+                    <div class="project-text-reverse">
+                        <a class = "subtitle" href="2020/11/20/alethea.html" target="_blank"> Alethea: finding the truth in Twitter</a>
+                        <p>Alethea's objective is to create a web application to aggregate data on fake news from fact checking
+                            Twitter accounts. The goal of the app is to automate the collection of information in one place helping
+                            people to be informed in a fast and reliable way. <br>
+                            <a class = "view-more" href="2020/11/20/alethea.html" target="_blank">View more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "current">
+            <div class="current-container">
+                <h1 class="projects-title">Current Work</h1>
+                <p class = "parag-current"> Currently I have been investigating data on schooling quality in the state of Sergipe, Brazil.</p>
+                <div class="current-sub">
+                  <p class = "subtitle-2">Challenge</p>
+                  <p class = "parag-current">To identify the main weaknesses of education in Sergipe and propose recommendations.</p>
+                </div>
+                <div class="current-sub">
+                  <p class = "subtitle-2">Approach</p>
+                  <p class = "parag-current">Analysing data provided by the Brazilian Ministry of Education and researching the related literature.</p>
+                </div>
+                <div class="current-sub">
+                    <p class = "subtitle-2">Outlook</p>
+                    <p class = "parag-current"> So far, the main findings are:</p>
+                      <ul class = lista>
+                        <li>the index of education quality in Sergipe is low compared to other states;</li>
+                        <li>severe lack of training for teachers;</li>
+                        <li>poor infrastructure (libraries and labs);</li>
+                        <li>insufficient textbooks;</li>
+                      </ul>
+                    <p class = "parag-current"> The plots bellow show the distributions of the index of education quality in Sergipe and in Brazil. On the left, it is clearly visible that Sergipe has lower performance compared to the rest of the country. The map on the right shows the geographical distribution of the index.</p>
+                        <div class="image-bloc">
+                            <div class="current-img-1">
+                                <img class = "sergipe" src="assets/dist_br.png" alt="map" >
+                            </div>
+                            <div class="current-img-2">
+                                <img class = "sergipe" src="assets/map_se.png" alt="map" >
+                            </div>
+                        </div>
+                    <p class = "parag-current">  To further explore the outcomes of Sergipe relative to the other states, I employed the following bar plot: </p>
+                        <div class="current-img-3">
+                            <img class = "sergipe" src="assets/ranking_br.png" alt="map" >
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"> </div>
     </div>
-
-    <div id = "welcome">
-      <h1>Welcome,</h1>
-      <img id = "brunoPic" src="assets/IMG_3076.jpeg" alt="bruno's picture">
-      <br><br><p>I'm Bruno, a legislative advisor working at the Federal Senate of Brazil. I reasearch a variety of topics to inform legislative proposals. My main interest is evidence-based public policy, especially in the field of education. During my master I worked at the Hertie School Data Science Lab, in Berlin. As a teaching assistant I offered consultations on R, data visualization and causal inference. In my free time, apart from exploring data, I like exploring new places and cultures. Reading, gaming and jogging are also my hobbies. In this page I present some of my projects and experiences. I hope you like.</p>
-      <div class="contatos">
-        <ul id ="contatos">
-          <li><a href="mailto:bruno.ponne@gmail.com?subject=PortfolioMessage">Email</a></li>
-          <li><a href="https://github.com/bruno-ponne">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/bruno-gasparotto-ponne-b6041810">Linkedin</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div id = "projects">
-      <h1>Projects</h1>
-      <div class="projeto1">
-        <a href="2020/06/30/education.html"><img id = "capa01" src="assets/capa01.png" alt="capa01"></a>
-        <a href="2020/06/30/education.html"><h3>Education Quality in Ceará - Exploratory Analysis</h3></a>
-          <p>  In 2007, a series of reforms were implemented in the education system in
-            Ceará, Brazil. This research aims to explore data on the education quality index
-            to find out if it suggests these reforms had an impact on student achievement.
-            In order to do so, panel data is analysed through spatial plots, time series and
-            scatter plots.<br><a href="2020/06/30/education.html">View more</a></p>
-      </div>
-
-
-      <div class="projeto1">
-        <a href="2021/05/30/master-thesis.html"><img id = "capa01" src="assets/capa02.png" alt="capa02"></a>
-        <a href="2021/05/30/master-thesis.html"><h3>Education Quality in Ceará - Confirmatory Analysis</h3></a>
-          <p> This project is a continuation of the exploratory analysis of the educational reforms in Ceará. It was actually my Master thesis presented at the Hertie School in 2021 and tutored by Professor Christian Traxler. Two causal inference methodologies - fixed-effects and synthetic control method - were employed to examine the effect of the educational reforms implemented in Ceará, Brazil. <br><a href="2021/05/30/master-thesis.html">View more</a></p>
-          
-      </div>
-     
-
-      <div class="projeto1">
-        <a href="2021/04/15/ML.html"><img id = "capa01" src="assets/capa03.png" alt="capa03"></a>
-        <a href="2021/04/15/ML.html"><h3>Predicting student loan default in Brazil</h3></a>
-          <p>This project was presented in the Machine Learning Course at the Hertie School in 2021, tutored by Professor Slava Jankin and Hannah Bechara. Our goal was to employ machine learning algorithms to predict loan default probabilities in the context of a Brazilian student loan program called FIES. For the initial runs, we employed 5 methods: logistic regression, decision tree, random forest, linear support vector classification, and artificial neural networks - ANN. Random forest and ANN achieved the highest area under the curve (AUC) scores. Our final objective was to create an ensemble model with the best performing models. Moreover we studied the predictive power of the main features. We also  discussed the ethical, social, and economic implications of the results obtained. <br><a href="2021/04/15/ML.html">View more</a></p>
-          
-      </div>
-
-      <div class="projeto1">
-        <a href="2020/11/20/alethea.html"><img id = "capa01" src="assets/capa04.png" alt="capa03"></a>
-        <a href="2020/11/20/alethea.html"><h3>Alethea: finding the truth in Twitter</h3></a>
-          <p>Alethea's objective is to create a web application to aggregate data on fake news from fact checking Twitter accounts. The goal of the app is to automate the collection of information in one place helping people to be informed in a fast and reliable way. <br><a href="2020/11/20/alethea.html">View more</a></p>
-          
-      </div>
-
-    </div>
-    <div id = "current">
-        <h1>Current Work</h1><br>
-        <p> Currently I have been investigating data on schooling quality in the state of Sergipe, Brazil.</p><br>
-          <h3>Challenge</h3>
-            <p>To identify the main weaknesses of education in Sergipe and propose recommendations.</p><br>
-          <h3>Approach</h3>
-            <p>Analysing data provided by the Brazilian Ministry of Education and researching the related literature.</p><br>
-          <h3>Outlook</h3>
-            <p> So far, the main findings are:</p>
-              <ul class = whitePar>
-                <li>the index of education quality in Sergipe is low compared to other states;</li>
-                <li>severe lack of training for teachers;</li>
-                <li>poor infrastructure (libraries and labs);</li>
-                <li>insufficient textbooks;</li>
-              </ul>
-            <p> The plot below compares Sergipe and Brazil's distribution of the index of education quality. It is clearly visible that Sergipe has lower performance compared to the rest of the country.</p>
-            <img class = "sergipe1" src="assets/dist_br.png" alt="map" >
-            <p> To further explore the outcomes of Sergipe relative to the other states, I employed the following bar plot: </p>
-            <img class = "sergipe2" src="assets/ranking_br.png" alt="map" >
-            <p> Finally, the spatial plot below provides an overview of the geographical areas where public policies to improve education are more urgent: </p>
-            <img class = "sergipe3" src="assets/map_se.png" alt="map" > <br>
-    </div>
-    <footer></footer>
-
-  </body>
+</body>
+</html>
