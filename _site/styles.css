@@ -290,6 +290,7 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 5%;
     }
 
     #contatos{
@@ -330,10 +331,15 @@ body{
     .project{
         display: flex;
         flex-direction: column;
+        margin-bottom: 10%;
+        margin-top: 10%;
     }
+
     .project-reverse{
         display: flex;
         flex-direction: column;
+        margin-bottom: 10%;
+        margin-top: 10%;
     }
 
     .project-image{
@@ -381,6 +387,10 @@ body{
     
     .current-img-3 img{
         width:100%;
+    }
+
+    .subtitle-2{
+        margin-top: 7%;
     }
 }
 
