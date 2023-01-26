@@ -7,11 +7,12 @@ abstract: In 2007, a series of reforms were implemented in the education system 
   to find out if it suggests these reforms had an impact on student achievement.
   In order to do so, panel data is analysed through spatial plots, time series and
   scatter plots.
+image: capa01.png
 ---
 
 <br>
 
-### The reforms in Ceará, Brazil
+### Introduction
 <div style="color:#4E4C4C; text-align: justify">
 
 Around 2007, the government of Ceará, a state in the northeastern part of Brazil, started a series of reforms in its education system. These reforms comprised five main pillars: fiscal incentives to municipalities based on outcomes; technical assistance for municipalities; more autonomy and accountability for local systems; regular monitoring of learning in order to collect actionable data, and elimination of political influence in the choice of principals and teachers.
@@ -209,6 +210,16 @@ As just presented, the reforms in Ceará appear to have had a positive impact in
 </div>
 
 <br>
-<p style="color:#4E4C4C; text-align: justify">The complete files to this analysis can be found on: </p>
-<https://github.com/bruno-ponne/Introduction-to-Data-Science>
+
+<div class = "github">
+    <div class = "github-img">
+        <img src="/assets/github-mark.png"/>
+    </div>
+    <div class = "github-link">
+        Visit the complete project at
+        <a href='https://github.com/bruno-ponne/Introduction-to-Data-Science' target="_blank"> my Github repository.</a>
+    </div>
+</div>
+<br>
+
 

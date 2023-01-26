@@ -2,27 +2,26 @@ body{
   margin: 0;
   font-family: 'Roboto Slab', serif;}
 
-#ulmenu{
-  list-style: none;
-  height: 50px;
-  padding-right: 150px;
+.menu{
+  margin-left:8.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
-
-#menu li {
-  margin:10px;
-  padding:10px;
-  float: right;
-  border: 2px white solid;
-}
-
-#menu a {
+.menu a{
   color: white;
   text-decoration: none;
+  padding: 10px;
+  border: 1px white solid;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #213147;
 }
 
-#menu a:hover {
+.menu a:hover{
   color: #46BCF8;
   text-decoration: none;
+  background-color: #213147;
 }
 
 header{
@@ -52,6 +51,10 @@ img{
   margin: auto;
   width:50%;
   margin-bottom: 40px;
+}
+
+.larger-img img{
+  width: 65%;
 }
 
 #whiteBox{
@@ -117,4 +120,27 @@ footer{
   float: left;
   width: 40%;
   clear: right;
+}
+
+.github{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin:0;
+}
+
+.github-img img{
+  width: 100%;
+  margin:0;
+}
+
+.github-img{
+  margin:0;
+  width:5%;
+}
+
+.github-link{
+  margin:0;
+  padding-top: 15px;
+  padding-left: 15px;
 }

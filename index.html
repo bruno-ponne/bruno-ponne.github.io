@@ -1,3 +1,7 @@
+---
+title: Bruno Ponne Portfolio
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,107 +55,38 @@
         </div>
         <div class="projects">
             <div class="projects-case">
-                <div class="projects-title">
-                    <h1>Research and Data Exploration</h1>
-                </div>
-                <div class="project">
-                    <div class="project-text">
-                        <a class = "subtitle" href="2020/06/30/education.html" target="_blank">Education Quality in Ceará - Exploratory Analysis </a>
-                        <p> In 2007, a series of reforms were implemented in the education system in
-                            Ceará, Brazil. This research aims to explore data on the education quality index
-                            to find out if it suggests these reforms had an impact on student achievement.
-                            In order to do so, panel data is analysed through spatial plots, time series and
-                            scatter plots.<br><a class = "view-more" href="2020/06/30/education.html" target="_blank">View more</a></p>
-                    </div>
-                    <div class="project-image">
-                        <img class="cover" src="assets/capa01.png" alt="capa01">
-                    </div>
-                </div>
-                <div class="project-reverse">
-                    <div class="project-image-reverse">
-                        <img class="cover" src="assets/capa02.png" alt="capa02">
-                    </div>
-                    <div class="project-text-reverse">
-                        <a class = "subtitle" href="2021/05/30/master-thesis.html" target="_blank">Education Quality in Ceará - Confirmatory Analysis</a>
-                        <p>This project is a continuation of the exploratory analysis of the educational reforms in Ceará. It was
-                            actually my Master thesis presented at the Hertie School in 2021 and tutored by Professor Christian
-                            Traxler. Two causal inference methodologies - fixed-effects and synthetic control method - were employed
-                            to examine the effect of the educational reforms implemented in Ceará, Brazil.</p>
-                        <a class = "view-more" href="2021/05/30/master-thesis.html" target="_blank">View more</a>
-                    </div>
+                <h1>Projects</h1>
+                <ul class="projects-list">
+                    {% for post in site.posts %}
+                    <li class="project-style">
+                        <div class="project-name">
+                            <h2>
+                                <a class="project-link" 
+                                href= 
+                                "{% if post.image == 'capa06.png' %}
+                                    http://www.educa-sergipe.com.br/
+                                {% else %}
+                                    {{ post.url }}
+                                {% endif %}"
+                                target=
+                                "{% if post.image == 'capa06.png' %}
+                                    _blank
+                                {% else %}
+                                    _self
+                                {% endif %}">
 
-                </div>
-                <div class="project">
-                    <div class="project-text">
-                        <a class = "subtitle" href="2021/04/15/ML.html" target="_blank"> Predicting student loan default in Brazil </a>
-                        <p>This project was presented in the Machine Learning Course at the Hertie School in 2021, tutored by
-                            Professor Slava Jankin and Hannah Bechara. Our goal was to employ machine learning algorithms to predict
-                            loan default probabilities in the context of a Brazilian student loan program called FIES. For the
-                            initial runs, we employed 5 methods: logistic regression, decision tree, random forest, linear support
-                            vector classification, and artificial neural networks - ANN. Random forest and ANN achieved the highest
-                            area under the curve (AUC) scores. Our final objective was to create an ensemble model with the best
-                            performing models. Moreover we studied the predictive power of the main features. We also discussed the
-                            ethical, social, and economic implications of the results obtained. <br>
-                            <a class = "view-more" href="2021/04/15/ML.html" target="_blank">View more</a></p>
-                    </div>
-                    <div class="project-image">
-                        <img class="cover" src="assets/capa03.png" alt="capa03">
-                    </div>
-                </div>
-                <div class="project-reverse">
-                    <div class="project-image-reverse">
-                        <img class="cover" src="assets/capa04.png" alt="capa04">
-                    </div>
-                    <div class="project-text-reverse">
-                        <a class = "subtitle" href="2020/11/20/alethea.html" target="_blank"> Alethea: finding the truth in Twitter</a>
-                        <p>Alethea's objective is to create a web application to aggregate data on fake news from fact checking
-                            Twitter accounts. The goal of the app is to automate the collection of information in one place helping
-                            people to be informed in a fast and reliable way. <br>
-                            <a class = "view-more" href="2020/11/20/alethea.html" target="_blank">View more</a>
-                        </p>
-                    </div>
-                </div>
+                                {{ post.title }}</a>
+                            </h2>
+                            {{ post.abstract }}
+                        </div>
+                        <div class="project-img-box">
+                            <img class="project-img" src="/assets/covers/{{ post.image }}" alt="image related to the project">
+                        </div>
+                    </li>
+                    {% endfor %}
             </div>
         </div>
-        <div class = "current">
-            <div class="current-container">
-                <h1 class="projects-title">Current Work</h1>
-                <p class = "parag-current"> Currently I have been investigating data on schooling quality in the state of Sergipe, Brazil.</p>
-                <div class="current-sub">
-                  <p class = "subtitle-2">Challenge</p>
-                  <p class = "parag-current">How to tranform data provided by the Ministry of Education in insights that help mayors to improve quality of schooling.</p>
-                </div>
-                <div class="current-sub">
-                  <p class = "subtitle-2">Approach</p>
-                  <p class = "parag-current">Analysing data provided by the Brazilian Ministry of Education, researching the related literature and creating a dashboard with the main insights.</p>
-                </div>
-                <div class="current-sub">
-                    <p class = "subtitle-2">Outlook</p>
-                    <p class = "parag-current"> Vist the dashboard I am developing to provide mayors and teachers with recommendations: <a href="http://www.educa-sergipe.com.br" target="_blank">educa-se</a></p>
-                    <p class = "parag-current"> Key findings:</p>
-                      <ul class = lista>
-                        <li>the index of education quality in Sergipe is low compared to other states;</li>
-                        <li>severe lack of training for teachers;</li>
-                        <li>poor infrastructure (libraries and labs);</li>
-                        <li>insufficient textbooks;</li>
-                      </ul>
-                    <p class = "parag-current"> The plots bellow show the distributions of the index of education quality in Sergipe and in Brazil. On the left, it is clearly visible that Sergipe has lower performance compared to the rest of the country. The map on the right shows the geographical distribution of the index.</p>
-                        <div class="image-bloc">
-                            <div class="current-img-1">
-                                <img class = "sergipe" src="assets/dist_br.png" alt="map" >
-                            </div>
-                            <div class="current-img-2">
-                                <img class = "sergipe" src="assets/map_se.png" alt="map" >
-                            </div>
-                        </div>
-                    <p class = "parag-current"> To further explore the outcomes of Sergipe relative to the other states, I employed the following bar plot: </p>
-                        <div class="current-img-3">
-                            <img class = "sergipe" src="assets/ranking_br.png" alt="map" >
-                        </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer"> </div>
+    <div class="footer"></div>
     </div>
 </body>
 </html>

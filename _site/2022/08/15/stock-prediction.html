@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Predicting the price direction of Petrobras stock - PETR4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/project_style.css">
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <a href="http://localhost:4000" class="button-back">Back to Portfolio</a>
+    </div>
+  </header>
+  <div id="titAbs">
+    <div id="titComp">
+      <h1>Predicting the price direction of Petrobras stock - PETR4</h1>
+    </div>
+    <div id=abstract>In this project, I use Random Forest and AdaBoost models to predict if a stock price will increase or decrease in the next hour based on data of the last hour. It was presented as the final paper in the Specialization Course in Machine Learning at PUC Minas University, in 2022.</div>
+  </div>
+
+  <div id="whiteBox">
+    <section>
+      <h3 id="introduction">Introduction</h3>
+
+<p>The prediction of stocks’ price movement is complex since price data presents high volatility and high noise levels. Nonetheless, several studies have pointed out the possibility to take advantage of market inefficiencies to predict stocks’ movements. This projects uses sentiment analysis, technical indicators and other features to predict the price movement of PETR4 with two algorithms: Random Forest and Adaboost.</p>
+
+<p><br /></p>
+
+<h3 id="data-employed">Data Employed</h3>
+
+<p><img src="/assets/data_scheme_02.png" alt="Data scheme - stock price prediction" /></p>
+
+<h3 id="steps">Steps</h3>
+
+<ol class="larger-img">
+  <li>Gathering data with the following Python libraries: yfinance, tweepy, pytrends;</li>
+  <li>Feature Engineering, missing data and outliers treatment
+<img src="/assets/na_imputation.png" alt="Missing data imputation" />
+<img src="/assets/outlier_treatment.png" alt="Outlier treatment" /></li>
+  <li>Visualizing and getting insights from data;
+<img src="/assets/PETR4_viz.png" alt="Data Visualization" /></li>
+  <li>Training the models, hyperparameters tunning, backtesting and evaluation.</li>
+</ol>
+
+<p><br /></p>
+
+<h3 id="main-learnings">Main Learnings</h3>
+
+<ul>
+  <li>Feature Engineering, outlier treatment and imputation of missing data play an important role in the prediction task;</li>
+  <li>Random Forest models outperformed Adaboost;</li>
+  <li>Sentiment analysis of tweets about finance seem to improve predictions;</li>
+  <li>At a first glance, it seems that the models are not better than choosing the price direction by chance. However, when only extreme movements are considered, the precisions are higher, providing a profit.
+<br />
+<br /></li>
+</ul>
+
+<div class="github">
+    <div class="github-img">
+        <img src="/assets/github-mark.png" />
+    </div>
+    <div class="github-link">
+        Visit the complete project at
+        <a href="https://github.com/bruno-ponne/Market-Prediction" target="_blank"> my Github repository.</a>
+    </div>
+</div>
+
+
+    </section>
+  </div>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>

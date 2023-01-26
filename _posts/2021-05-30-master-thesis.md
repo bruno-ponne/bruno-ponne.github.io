@@ -2,7 +2,8 @@
 title: "The Impact of Institutional Arrangements on Student Achievement: Evidence from Brazil"
 author: "Bruno Gasparotto Ponne - bruno.ponne@gmail.com"
 layout: project
-abstract: This project is a continuation of the exploratory analysis of the educational reforms in Ceará. It was actually my Master thesis presented at the Hertie School in 2021 and tutored by Professor Christian Traxler. Two causal inference methodologies - fixed-effects and synthetic control method - were employed to examine the effect of the educational reforms implemented in Ceará, Brazil.  Bellow I present some highlights of it as well as some of the results. For the complete analysis, please visit my GitHub repo (at the bottom of this page). All the analysis was made in R.
+abstract: This project was actually my Master thesis presented at the Hertie School in 2021 and tutored by Professor Christian Traxler. Two causal inference methodologies - fixed-effects and synthetic control method - were employed to examine the effect of the educational reforms implemented in Ceará, Brazil.
+image: capa04.png
 ---
 
 
@@ -52,9 +53,21 @@ Here I show the permutation test employed to examine statistical significance of
 
 The synthetic control findings are consistent with an increase in performance in Portuguese. More precisely, the method indicates that scores increased by 10% and 5%, respectively, in primary education and lower secondary education. Regarding mathematics, the findings were not statistically significant. Furthermore, there was no evidence that the new policies had an impact on upper secondary education.
 
+<br>
+
+<div class = "github">
+    <div class = "github-img">
+        <img src="/assets/github-mark.png"/>
+    </div>
+    <div class = "github-link">
+        Visit the complete project at
+        <a href='https://github.com/bruno-ponne/MasterThesis' target="_blank"> my Github repository.</a>
+    </div>
+</div>
+<br>
+
 ### Important notes to replicate my thesis from my Git repository:
 
-- Repository link: <https://github.com/bruno-ponne/MasterThesis>;
 - To replicate my research, download this repository and open the R project in your computer. After that choose the script of interest and run it;
 - All paths are already coded to load the necessary functions and data from the right folders;
 - All necessary data is in the *data* and *map* folder.
