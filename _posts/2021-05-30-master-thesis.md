@@ -16,9 +16,9 @@ My objective was to estimate the causal effect of these interventions on student
 
 ### Analytical Sample
 
-The data for this reserach are provided by the Ministry of Education, Ministry of Health, Instituto de Pesquisa Econômica Aplicada (IPEA), a research department of the Brazilian government, and Instituto Brasileiro de Geografia e Estatística (IBGE), the statistics institute of Brazil.
+The data for this research are provided by the Ministry of Education, Ministry of Health, Instituto de Pesquisa Econômica Aplicada (IPEA), a research department of the Brazilian government, and Instituto Brasileiro de Geografia e Estatística (IBGE), the statistics institute of Brazil.
 
-### Descriptive Satatistics
+### Descriptive Statistics
 
 Here I present some descriptive statistics. Plots were developed with ggplot. Density, dot, line and spatial plots explore the characteristics of the sample before and after the intervention. In general, the plots suggest that education in Ceará has improved more compared to the rest of the country as I had already pointed out in my previous exploratory analysis.
 
@@ -38,7 +38,7 @@ The R library *Synth* was used to estimate a synthetic Ceará, that is, a Ceará
 
 The authors of the package *Synth* provide a function to plot graphs in base R. However, since I wished to use colors to highlight my graphs, I developed the function *plot_scm()* that prepares the output of *Synth* to be used in ggplot.
 
-The plots bellow shows the results of the synthetic control aprroach for primary and lower secondary education
+The plots bellow shows the results of the synthetic control approach for primary and lower secondary education
 
 <img src="/assets/Figure8.png" width="550" height="auto"/>
 

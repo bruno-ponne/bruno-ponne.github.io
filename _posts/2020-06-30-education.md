@@ -5,7 +5,7 @@ layout: project
 abstract: In 2007, a series of reforms were implemented in the education system in
   Ceará, Brazil. This research aims to explore data on the education quality index
   to find out if it suggests these reforms had an impact on student achievement.
-  In order to do so, panel data is analysed through spatial plots, time series and
+  In order to do so, panel data is analyzed through spatial plots, time series and
   scatter plots.
 image: capa01.png
 ---
@@ -122,7 +122,7 @@ In this section, I explore how the education quality index evolved through time 
 
 ### Education Quality vs. socioeconomic level
 <div style="color:#4E4C4C; text-align: justify">
-In this section, I analyse the education quality index as a function of the socioeconomic level of the school for Ceará and for the rest of Brazil. What can be seen is that schools in Ceará have a lower socioeconomic level, but a higher education index compared to the rest of the country. The best primary and lower secondary school in 2019 are located in Ceará.
+In this section, I analyze the education quality index as a function of the socioeconomic level of the school for Ceará and for the rest of Brazil. What can be seen is that schools in Ceará have a lower socioeconomic level, but a higher education index compared to the rest of the country. The best primary and lower secondary school in 2019 are located in Ceará.
 </div>
 
 
@@ -206,7 +206,7 @@ Here I present the proportions of missing values (NA) relative to the number of 
 
 ### Conclusion
 <div style="color:#4E4C4C; text-align: justify">
-As just presented, the reforms in Ceará appear to have had a positive impact in Ceará. The spatial data shows a blue island of good education indexes in the treated state. The time series show a much more inclined line of increase for Ceará, compared to Brazil. Estimating the true impact is, however, more complex because we must account for any source of endogeneity that might be affecting both treatment assignment and the outcome of interest. Predictors of education quality index should also be balanced between control and treatment group. One possible approach to continue this investigation is to apply a fixed effect model. It is also important to investigate whether NAs are associated to poor performing municipalities and how NAs develop before and after intervention. To sum up, this was an informative descriptive analysis of the reforms in the education system of Ceará and a first step to analyse its impacts in student achievement.
+As just presented, the reforms in Ceará appear to have had a positive impact in Ceará. The spatial data shows a blue island of good education indexes in the treated state. The time series show a much more inclined line of increase for Ceará, compared to Brazil. Estimating the true impact is, however, more complex because we must account for any source of endogeneity that might be affecting both treatment assignment and the outcome of interest. Predictors of education quality index should also be balanced between control and treatment group. One possible approach to continue this investigation is to apply a fixed effect model. It is also important to investigate whether NAs are associated to poor performing municipalities and how NAs develop before and after intervention. To sum up, this was an informative descriptive analysis of the reforms in the education system of Ceará and a first step to analyze its impacts in student achievement.
 </div>
 
 <br>
