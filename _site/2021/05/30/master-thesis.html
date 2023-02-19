@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-621D1NYHDX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-621D1NYHDX');
+  </script>
   <meta charset="utf-8">
   <title>The Impact of Institutional Arrangements on Student Achievement: Evidence from Brazil</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -31,9 +40,9 @@
 
 <h3 id="analytical-sample">Analytical Sample</h3>
 
-<p>The data for this reserach are provided by the Ministry of Education, Ministry of Health, Instituto de Pesquisa Econômica Aplicada (IPEA), a research department of the Brazilian government, and Instituto Brasileiro de Geografia e Estatística (IBGE), the statistics institute of Brazil.</p>
+<p>The data for this research are provided by the Ministry of Education, Ministry of Health, Instituto de Pesquisa Econômica Aplicada (IPEA), a research department of the Brazilian government, and Instituto Brasileiro de Geografia e Estatística (IBGE), the statistics institute of Brazil.</p>
 
-<h3 id="descriptive-satatistics">Descriptive Satatistics</h3>
+<h3 id="descriptive-statistics">Descriptive Statistics</h3>
 
 <p>Here I present some descriptive statistics. Plots were developed with ggplot. Density, dot, line and spatial plots explore the characteristics of the sample before and after the intervention. In general, the plots suggest that education in Ceará has improved more compared to the rest of the country as I had already pointed out in my previous exploratory analysis.</p>
 
@@ -58,7 +67,7 @@
 
 <p>The authors of the package <em>Synth</em> provide a function to plot graphs in base R. However, since I wished to use colors to highlight my graphs, I developed the function <em>plot_scm()</em> that prepares the output of <em>Synth</em> to be used in ggplot.</p>
 
-<p>The plots bellow shows the results of the synthetic control aprroach for primary and lower secondary education</p>
+<p>The plots bellow shows the results of the synthetic control approach for primary and lower secondary education</p>
 
 <p><img src="/assets/Figure8.png" width="550" height="auto" /></p>
 

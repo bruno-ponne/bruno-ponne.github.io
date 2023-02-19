@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-621D1NYHDX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-621D1NYHDX');
+  </script>
   <meta charset="utf-8">
   <title>Predicting student loan default in Brazil</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -34,7 +43,7 @@
 
 <p>We used a database that contains information about more than 600,000 students who got the loan from the FIES program.  Each line of the data set corresponds to one contract and includes information regarding the compliance with the loan, amount of days of no compliance with the payment, and a dummy for loan default. Besides, for every contract, there is information about each student such as family income, whether she has a job, gender, race, which course she is taking, marital status, whether the student went to public high school or not, and so on. Each one of these variables is a possible predictor of loan default. The data sources are the Ministry of Education and financial institutions that operate the loan; the Brazilian National Treasury compiled the final database.</p>
 
-<p>As expected, our results show that an ensemble model is better able to provide accurate classification. Our ensemble model outperforms all non-ensemble models. Loan value-related features are the most important predic- tors of loan default in our model. This might be a source of bias if we consider that subgroups who hire specific loan values might be included or excluded from the program if our model is employed.</p>
+<p>As expected, our results show that an ensemble model is better able to provide accurate classification. Our ensemble model outperforms all non-ensemble models. Loan value-related features are the most important predictors of loan default in our model. This might be a source of bias if we consider that subgroups who hire specific loan values might be included or excluded from the program if our model is employed.</p>
 
 <h3 id="data-set-exploration">Data set exploration</h3>
 
@@ -87,13 +96,13 @@
 
 <h3 id="ensemble-model">Ensemble Model</h3>
 
-<p>At this point we developed an ensemble model, that consisted of the weighted average of the three best individual models (ANN, Random Forest and Logistic Regression). In the graph bellow we ilustrate the search for the optimal weights to calculate the weighted average of our final model.</p>
+<p>At this point we developed an ensemble model, that consisted of the weighted average of the three best individual models (ANN, Random Forest and Logistic Regression). In the graph bellow we illustrate the search for the optimal weights to calculate the weighted average of our final model.</p>
 
 <p><img src="/assets/output_38_1.png" alt="Weigh Search" /></p>
 
 <h3 id="feature-importance">Feature Importance</h3>
 
-<p>Total debt is the most important predictor in our en- semble model. It contains information on the total value of the debt of a certain student. It is related to which course the student chose, since some courses, like Medicine, are more expensive. It is also related to other features that also ap- pear among the most important, like semesters funded, loan value, loan limit and loan value per semester. Our model is, therefore, strongly driven by the amount of money hired by the student.</p>
+<p>Total debt is the most important predictor in our ensemble model. It contains information on the total value of the debt of a certain student. It is related to which course the student chose, since some courses, like Medicine, are more expensive. It is also related to other features that also ap- pear among the most important, like semesters funded, loan value, loan limit and loan value per semester. Our model is, therefore, strongly driven by the amount of money hired by the student.</p>
 
 <p><img src="/assets/output_49_1.png" alt="Feature importance" /></p>
 
