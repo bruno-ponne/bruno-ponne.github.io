@@ -55,6 +55,7 @@ body{
 .welcome-text{
     width: 60%;
     margin-left: 5%;
+    font-size: 14px;
 }
 
 .hello-highlight{
