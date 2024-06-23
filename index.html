@@ -19,9 +19,9 @@ title: Bruno Ponne Portfolio
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <title>Bruno Ponne - Legislative Advisor and Data Scientist</title>
-    <meta name="description" content="This portfolio provides an overview of my data science path, highlighting
-    my experiences with data cleaning, data analysis, visualizations and causal inference.">
+    <title>Bruno Ponne - Data Analyst</title>
+    <meta name="description" content="This portfolio provides an overview of my data analysis path, highlighting
+    my experiences with data cleaning, visualizations and causal inference.">
 </head>
 <body>
     <div class="container">
@@ -42,10 +42,11 @@ title: Bruno Ponne Portfolio
                     </div>
                 </div>
                 <div class="welcome-text">
-                    <p><p class = "hello-highlight"> Hello! I'm Bruno. </p> As a legislative advisor at the Federal Senate of Brazil, I am
-                    passionate about data exploration as a tool to inform legislative proposals. 
-                    I am a firm believer in evidence-based public policy and see it as a primary driver to shape a progressive society. 
-                    To get relevant insights for my work, I analyze data in R and Python. 
+                    <p><p class = "hello-highlight"> Hello! I'm Bruno. </p> 
+                    As a data analyst at The Data School in Hamburg, I am passionate about data analysis as a tool to inform important decisions. 
+                    I am a firm believer in evidence-based decision-making and see it as a primary factor for business success. 
+                    Before joining The Data School, I was a legislative advisor at the Federal Senate of Brazil, where I advocated for data-driven policy-making. 
+                    To gain relevant insights for my work, I analyze data using Tableau, Power BI, Alteryx, R, and Python.
 
 
                     <br>
@@ -82,11 +83,15 @@ title: Bruno Ponne Portfolio
                                 href= 
                                 "{% if post.image == 'capa06.png' %}
                                     http://www.educa-sergipe.com.br/
+                                {% elsif post.image == 'capa07.png' %}
+                                    https://public.tableau.com/views/Shouldyouusethegoldenratioinyourvisualizations/Dashboard?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link
                                 {% else %}
                                     {{ post.url }}
                                 {% endif %}"
                                 target=
                                 "{% if post.image == 'capa06.png' %}
+                                    _blank
+                                {% elsif post.image == 'capa07.png' %}
                                     _blank
                                 {% else %}
                                     _self
