@@ -5,7 +5,6 @@ title: Bruno Ponne Portfolio
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-621D1NYHDX"></script>
 	<script>
   	window.dataLayer = window.dataLayer || [];
@@ -50,14 +49,14 @@ title: Bruno Ponne Portfolio
 
                     <br>
 
-                    I am a <b>Data Analyst at The Information Lab</b> in Hamburg, where I help organizations turn complex data into actionable insights using Tableau, Alteryx, Power BI, and Python.
+                    I am a <b>Data Analyst at The Information Lab</b> in Hamburg, where I help organizations turn complex data into actionable insights using <b>Tableau, Snowflake, Alteryx, Power BI, R and Python.</b>
 
 
 
                     <br>
                     <br>
                     
-                    My approach to data is rooted in my background as a civil servant at the <b>Federal Senate of Brazil</b> and my <b>Master’s in Public Policy from the Hertie School</b> in Berlin. I don’t just build dashboards; I focus on evidence-based decision-making and the real-world impact of data.
+                    My approach to data is rooted in my background as a civil servant at the <b>Federal Senate of Brazil</b>, my <b>Master’s in Public Policy from the Hertie School</b> and my experience helping companies at <b>The Information Lab</b>. I don’t just build dashboards; I  focus on evidence-based decision-making and the real-world impact of data.
 
                     
                     <br>
@@ -107,8 +106,31 @@ title: Bruno Ponne Portfolio
                         </div>
                     </li>
                     {% endfor %}
+                </ul>
             </div>
         </div>
+
+        <div class="projects">
+            <div class="projects-case">
+                <h1>Publications</h1>
+                <ul class="projects-list">
+                    {% for pub in site.data.publications %}
+                    <li class="project-style">
+                        <div class="project-name" style="width: 100%;">
+                            <h2>
+                                <a class="project-link" 
+                                href="{{ pub.link }}"
+                                target="_blank">
+                                {{ pub.title }}</a>
+                            </h2>
+                            <p>{{ pub.journal }} ({{ pub.year }})</p>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
     <div class="footer"></div>
     </div>
 </body>

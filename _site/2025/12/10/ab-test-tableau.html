@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-621D1NYHDX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-621D1NYHDX');
+  </script>
+  <meta charset="utf-8">
+  <title>A/B Testing in Tableau: Safe, Native, and Statistically Rigorous</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/project_style.css">
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <a href="http://localhost:4000" class="button-back">Back to Portfolio</a>
+    </div>
+  </header>
+  <div id="titAbs">
+    <div id="titComp">
+      <h1>A/B Testing in Tableau: Safe, Native, and Statistically Rigorous</h1>
+    </div>
+    <div id=abstract>A native Tableau dashboard for A/B testing that calculates statistical significance and required sample size without external scripts. This tool helps businesses make data-driven decisions by avoiding common pitfalls like 'peeking' and ensures reliable results through rigorous statistical methods.</div>
+  </div>
+
+  <div id="whiteBox">
+    <section>
+      <h3 id="introduction">Introduction</h3>
+
+<p>A/B testing is the gold standard for making data-driven decisions in product development and marketing. However, a common pitfall in the business world is <strong>“peeking”</strong>—checking results too early and stopping a test as soon as it looks significant. This leads to false positives and decisions based on noise rather than signal.</p>
+
+<p>To address this, I developed a <strong>Tableau Public Dashboard</strong> that not only tracks the performance of control vs. treatment groups but also rigorously calculates <strong>Statistical Significance</strong> and <strong>Minimum Sample Size</strong> natively within Tableau.</p>
+
+<p><br /></p>
+
+<div class="tableauPlaceholder" id="viz1733940000000" style="position: relative">
+    <noscript>
+        <a href="#"><img alt="Dashboard 1 " src="https://public.tableau.com/static/images/Cl/Click-throughRateABTest/ABTestDashboard/1_rss.png" style="border: none" /></a>
+    </noscript>
+    <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="site_root" value="" />
+        <param name="name" value="Click-throughRateABTest/ABTestDashboard" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+        <param name="static_image" value="https://public.tableau.com/static/images/Cl/Click-throughRateABTest/ABTestDashboard/1.png" />
+        <param name="animate_transition" value="yes" />
+        <param name="display_static_image" value="yes" />
+        <param name="display_spinner" value="yes" />
+        <param name="display_overlay" value="yes" />
+        <param name="display_count" value="yes" />
+        <param name="language" value="en-US" />
+    </object>
+</div>
+<script type="text/javascript">
+    var divElement = document.getElementById('viz1733940000000');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    // Changed fixed 1000px width to 100% to fill the container
+    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1127px';}
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<p><br /></p>
+
+<h3 id="methodology">Methodology</h3>
+
+<p>Unlike many Tableau solutions that rely on external R or Python scripts, this dashboard performs all statistical calculations using native Tableau Calculated Fields. This ensures the dashboard is fast, portable, and easy to maintain.</p>
+
+<h4 id="1-sample-size-calculation">1. Sample Size Calculation</h4>
+<p>Before analyzing the results, it is crucial to determine how much data is needed. If you stop a test before reaching this threshold, your results may not be reliable. I implemented the sample size formula for <strong>two independent proportions</strong> based on the methodology from <a href="https://select-statistics.co.uk/calculators/sample-size-calculator-two-proportions/">Select Statistical Consultants</a>.</p>
+
+<p>The formula requires:</p>
+<ul>
+  <li><strong>Significance Level:</strong> Typically 5% (95% confidence).</li>
+  <li><strong>Power:</strong> Typically 80%.</li>
+  <li><strong>Baseline Conversion Rate:</strong> The current performance of the control group.</li>
+  <li><strong>Minimum Detectable Effect (MDE):</strong> The smallest improvement you want to be able to detect.</li>
+</ul>
+
+<p>The dashboard dynamically calculates the required n (sample size per group) to ensure the test has enough power to detect the MDE.</p>
+
+<h4 id="2-statistical-significance-z-test">2. Statistical Significance (Z-Test)</h4>
+<p>To determine if the difference between the Control (A) and Treatment (B) groups is real, I employed a <strong>Z-test for Two Independent Proportions</strong>.</p>
+
+<p>Following the statistical framework from <a href="https://online.stat.psu.edu/stat200/book/export/html/193">Penn State University</a>, the dashboard calculates:</p>
+<ul>
+  <li><strong>Pooled Proportion</strong>: A weighted average of the proportions from both groups.</li>
+  <li><strong>Standard Error:</strong> Calculated using the pooled proportion.</li>
+  <li><strong>Z-Score:</strong> The number of standard deviations the result is from the null hypothesis (no difference).</li>
+</ul>
+
+<p>If the Z-Score exceeds the critical value (e.g., 1.96 for 95% confidence) the dashboard flags the result as statistically significant.</p>
+
+<h3 id="advantages-over-other-approaches">Advantages Over Other Approaches</h3>
+
+<p>While resources like <a href="https://playfairdata.com/tableau/how-to-analyze-a-b-tests-in-tableau-using-z-tests/">Playfair Data’s Guide</a> offer excellent introductions to Z-tests in Tableau, my approach adds critical safeguards for business users:</p>
+
+<ol>
+  <li><strong>Minimum Sample Size Guardrails:</strong> Most dashboards show significance (p &lt; 0.05) even when sample sizes are too small, leading to premature conclusions. My dashboard explicitly visualizes the “Minimum Sample Size” line, warning users if the test is not yet mature.</li>
+  <li><strong>Native Implementation:</strong> By avoiding Python/R integrations, this solution works seamlessly on Tableau Public and requires no complex server-side configuration.</li>
+  <li><strong>Advanced Configuration:</strong> Users can adjust parameters like Confidence Level and MDE directly in the UI to see how they impact the required sample size and significance.</li>
+</ol>
+
+<h3 id="business-value">Business Value</h3>
+
+<p>For businesses, this tool bridges the gap between raw data and statistical rigor. It provides accurate A/B testing by:</p>
+<ul>
+  <li><strong>Reducing Risk:</strong> Prevents rolling out “winning” features that are actually neutral or harmful.</li>
+  <li><strong>Saving Time:</strong> Automates complex calculations that analysts usually perform manually in Excel or R.</li>
+  <li><strong>Standardizing Decisions:</strong> Provides a consistent framework for evaluating experiments across the organization.</li>
+</ul>
+
+<p><br /></p>
+
+<div class="github">
+    <div class="github-link">
+        Visit the dashboard on
+        <a href="https://public.tableau.com/app/profile/bruno.ponne/viz/Click-throughRateABTest/ABTestDashboard" target="_blank"> Tableau Public.</a>
+    </div>
+</div>
+
+    </section>
+  </div>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
